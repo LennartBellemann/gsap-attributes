@@ -13,7 +13,7 @@ const parallaxElements = document.querySelectorAll("[ga-parallax='image']");
 
     gaParallax.to(element, {
       duration: 1,
-      yPercent: 25,
+      yPercent: -20,
       ease: "none",
     });
   });
