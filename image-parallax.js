@@ -7,13 +7,13 @@ const parallaxElements = document.querySelectorAll("[ga-parallax='image']");
         start: "top bottom",
         end: "bottom top",
         markers: false,
-        scrub: 1,
+        scrub: true,
       },
     });
 
     gaParallax.to(element, {
       duration: 1,
       yPercent: 25,
-      ease: "power1.out",
+      ease: "none",
     });
   });
