@@ -1,3 +1,10 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+  var parallaxElement = document.querySelector('[ga-parallax="image"]');
+  
+  parallaxElement.style.height = '133.33%';
+});
+
 const parallaxElements = document.querySelectorAll("[ga-parallax='image']");
 
   parallaxElements.forEach(element => {
@@ -17,3 +24,7 @@ const parallaxElements = document.querySelectorAll("[ga-parallax='image']");
       ease: "none",
     });
   });
+
+
+
+
