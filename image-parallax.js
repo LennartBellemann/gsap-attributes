@@ -11,7 +11,7 @@ const parallaxElements = document.querySelectorAll("[ga-parallax='image']");
       },
     });
 
-    gaParallax.to(element, {
+    gaParallax.from(element, {
       duration: 1,
       yPercent: -20,
       ease: "none",
