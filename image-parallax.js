@@ -26,5 +26,5 @@ const parallaxElements = document.querySelectorAll("[ga-parallax='image']");
   });
 
 
-
+ 
 
