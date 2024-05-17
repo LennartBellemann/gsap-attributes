@@ -57,3 +57,22 @@ const parallaxElements = document.querySelectorAll("[ga-parallax='image']");
   });
 
 
+//link underline hover
+  $(document).ready(function() {
+            $('[ga-link-line="link"]').on("mouseenter", function() {
+                gsap.fromTo($(this).find('[ga-link-line="line"]'), { 
+                    x: "-110%"
+                }, {
+                    x: "0%",
+                    duration: 0.5
+                });
+            });
+
+            $('[ga-link-line="link"]').on("mouseleave", function() {
+                gsap.to($(this).find('[ga-link-line="line"]'), {
+                    x: "110%",
+                    duration: 0.5
+                });
+            });
+        });
+
